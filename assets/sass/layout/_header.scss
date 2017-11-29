@@ -169,7 +169,7 @@
 				}
 			}
 		}
-
+/*
 		@include breakpoint(medium) {
 			.content {
 				p {
@@ -179,7 +179,7 @@
 				}
 			}
 		}
-
+*/
 		@include breakpoint(small) {
 			> * {
 				margin-top: 2rem;
