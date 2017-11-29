@@ -1,0 +1,20 @@
+/* BG */
+#bg:before {
+  background: rgba(19, 21, 25, 0.5); }
+
+/* Header */
+#header .logo {
+  margin: 0 auto; }
+
+#header .content {
+  display: inline-block; }
+
+#header nav ul {
+  display: inline-block; }
+  #header nav ul li {
+    display: inline-block; }
+
+/* Main */
+#main article {
+  margin: 0 auto; }
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Nhc3MvaWU5LnNjc3MiLCIuLi9zYXNzL2xpYnMvX3ZhcnMuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFLQSxRQUFRO0FBRVA7RUFFRSxrQ0MwQmlDLEVEekJqQzs7QUFHSCxZQUFZO0FBRVg7RUFFRSxlQUFjLEVBQ2Q7O0FBSEY7RUFNRSxzQkFBcUIsRUFDckI7O0FBUEY7RUFXRyxzQkFBcUIsRUFLckI7RUFoQkg7SUFjSyxzQkFBcUIsRUFDckI7O0FBS04sVUFBVTtBQUVUO0VBRUUsZUFBYyxFQUNkIiwiZmlsZSI6ImllOS5jc3MifQ== */
