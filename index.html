@@ -21,6 +21,12 @@
 			gtag('js', new Date());
 			gtag('config', 'UA-22714303-1');
 		</script>
+		<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+		<script>
+			function onSubmit(token) {
+				document.getElementById("contact-form").submit();
+			}
+		</script>
 	</head>
 	<body>
 
@@ -73,10 +79,10 @@
 						<!-- Contact -->
 							<article id="contact">
 								<h2 class="major">Contact</h2>
-								<form name="contact" netlify-honeypot="bot-field" action="thank-you" netlify>
-                    <p style="display:none">
-                        <label>Don’t fill this out: <input name="bot-field"></label>
-                    </p>
+								<form id="contact-form" name="contact" netlify-honeypot="bot-field" action="thank-you" method="POST" netlify-recaptcha netlify>
+									<p style="display:none">
+											<label>Don’t fill this out: <input name="bot-field"></label>
+									</p>
 									<div class="field half first">
 										<label for="name">Name</label>
 										<input type="text" name="name" id="name" />
@@ -90,7 +96,14 @@
 										<textarea name="message" id="message" rows="4"></textarea>
 									</div>
 									<ul class="actions">
-										<li><input type="submit" value="Send Message" class="special" /></li>
+										<li>
+											<button
+												class="g-recaptcha"
+												data-sitekey="6LcjGNQUAAAAANley3imFQucMPy601MXtgmy76c3"
+												data-callback='onSubmit'>Send Message
+											</button>
+
+									</li>
 									</ul>
 								</form>
 								<ul class="icons">
@@ -105,7 +118,9 @@
 
 				<!-- Footer -->
 					<footer id="footer">
-						<p class="copyright"><!--&copy; Gabriel Wilkes--></p>
+						<p class="copyright">&copy; Gabriel Wilkes | This site uses Google's Invisible reCAPTCHA:
+							<a href="https://policies.google.com/privacy" target="_blank">Privacy</a>
+							<a href="https://policies.google.com/terms" target="_blank">Terms</a></p>
 					</footer>
 
 			</div>
